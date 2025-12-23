@@ -8,7 +8,7 @@ const Title = () => {
   return <h1 className='title'>Hello from Title Componet</h1>
 }
 
-function App() {
+export function App() {
 
   const jsxHeading = (
     <h1 className='head' tabIndex='5'>
@@ -17,6 +17,7 @@ function App() {
   )
   return (
     <>
+      <FunctionalComponet />
       <Title />
       {jsxHeading}
     </>
@@ -24,7 +25,7 @@ function App() {
 
 }
 
-const FunctionalComponet = () => {
+export const FunctionalComponet = () => {
 
   const [count, setCount] = useState(0)
 
@@ -48,4 +49,4 @@ const FunctionalComponet = () => {
 
 
 
-export default FunctionalComponet
+export default App
