@@ -17,9 +17,9 @@ export function App() {
   )
   return (
     <>
-      <FunctionalComponet />
       <Title />
       {jsxHeading}
+      <FunctionalComponet />
     </>
   )
 
@@ -35,7 +35,7 @@ export const FunctionalComponet = () => {
 
   return (
     <>
-      <div style={{ margin: '50px' }}>
+      <div style={{ margin: '50px', color: 'grey' }}>
         <h1>Hello from FunctionalComponet</h1>
         <h3>Counter app</h3>
         <h2>{count}</h2>
