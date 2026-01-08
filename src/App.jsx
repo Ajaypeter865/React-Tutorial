@@ -1,52 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react'
 
-const Title = () => {
-
-  return <h1 className='title'>Hello from Title Componet</h1>
-}
-
-export function App() {
-
-  const jsxHeading = (
-    <h1 className='head' tabIndex='5'>
-      Hello Ajay from JSX
-    </h1>
-  )
-  return (
-    <>
-      <Title />
-      {jsxHeading}
-      <FunctionalComponet />
-    </>
-  )
-
-}
-
-export const FunctionalComponet = () => {
-
+const Counter = () => {
   const [count, setCount] = useState(0)
 
-  const increase = () => {
-    setCount(count + 1)
-  }
+  const Increase = count + 1
+  const Decrease = count - 1
+  return(
+    <div className='btn'>
+      <h1>Count : {count}</h1>
+      <button className='btn' onClick={() => {
+        setCount(Increase)
 
-  return (
-    <>
-      <div style={{ margin: '50px', color: 'grey' }}>
-        <h1>Hello from FunctionalComponet</h1>
-        <h3>Counter app</h3>
-        <h2>{count}</h2>
-        <button onClick={increase}>Add</button>
-      </div>
-    </>
+      }}>Increase</button>
+
+      <button onClick={() => {
+        setCount(Decrease)
+      }}>Decrease</button>
+    </div>
   )
-
 }
 
 
 
-
-export default App
+export default Counter
