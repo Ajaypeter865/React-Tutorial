@@ -6,7 +6,7 @@ const Counter = () => {
 
   const Increase = count + 1
   const Decrease = count - 1
-  return(
+  return (
     <div className='btn'>
       <h1>Count : {count}</h1>
       <button className='btn' onClick={() => {
@@ -21,6 +21,14 @@ const Counter = () => {
   )
 }
 
+export const ThemeSwitcher = () => {
+  const [theme, setTheme] = useState('Light')
 
+  const current = theme
+  return (
+    <div>
+      <button onClick={() =>setTheme( theme === 'Light' ? 'Dark' : 'Light')}>{current}</button></div>
+  )
+}
 
 export default Counter
