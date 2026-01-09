@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.header {
+  background-color: #1e293b; /* dark blue */
+  padding: 16px 32px;
+}
+
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  font-size: 16px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #e5e7eb; /* light gray */
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-items a:hover {
+  background-color: #334155;
+  color: #ffffff;
+}

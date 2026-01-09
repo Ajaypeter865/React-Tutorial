@@ -1,42 +1,61 @@
 import './App.css'
-import { useState } from 'react'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 
-const Counter = () => {
-  const [count, setCount] = useState(0)
+import Header from './Componets/Header'
+import Counter from './Componets/Counter'
+import NameForm from './Componets/NameForm'
+import ThemeSwitcher from './Componets/Theme'
+import UpdateTitle from './Componets/UpdateTitle'
+import Error from './Componets/Error'
+import LoginButton from './Componets/LoginButton'
 
-  const Increase = count + 1
-  const Decrease = count - 1
-  return (
-    <div className='btn'>
-      <h1>Count : {count}</h1>
-      <button className='btn' onClick={() => {
-        setCount(Increase)
 
-      }}>Increase</button>
-
-      <button onClick={() => {
-        setCount(Decrease)
-      }}>Decrease</button>
-    </div>
-  )
-}
-
-export function ThemeSwitcher() { const [theme, setTheme] = useState("light"); return ( <div style={{ backgroundColor: theme === "light" ? "#fff" : "#333", color: theme === "light" ? "#000" : "#fff", padding: "20px" }}> <h1>{theme === "light" ? "Light Mode" : "Dark Mode"}</h1> <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}> Toggle Theme </button> </div> ); }
-
-export const NameForm = () => {
-
-  const [name, SetName] = useState('')
+const AppLayout = () => {
 
   return (
     <div>
-      <input type="text" onChange={(e) => {
-        SetName(e.target.value)
-      }} />
-      <br />
-      <br />
-      <h1>Input : {name}</h1>
+      <Header />
+      <Outlet />
     </div>
   )
+
 }
 
-export default Counter
+
+const appRouter = createBrowserRouter([
+  {
+    path: '/',
+    element: <AppLayout />,
+    errorElement : <Error/>,
+
+    children: [
+  
+      {
+        path: '/counter',
+        element: <Counter />
+      },
+      {
+        path: '/nameform',
+        element: <NameForm />
+      },
+      {
+        path: '/theme',
+        element: <ThemeSwitcher />
+      },
+      {
+        path: '/updatetitle',
+        element: <UpdateTitle />
+      },
+        {
+        path: '/button',
+        element: <LoginButton />
+      },
+    ]
+  }
+])
+
+const App = () => {
+ return <RouterProvider router={appRouter}/>
+}
+
+export default App
