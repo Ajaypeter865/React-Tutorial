@@ -21,13 +21,21 @@ const Counter = () => {
   )
 }
 
-export const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState('Light')
+export function ThemeSwitcher() { const [theme, setTheme] = useState("light"); return ( <div style={{ backgroundColor: theme === "light" ? "#fff" : "#333", color: theme === "light" ? "#000" : "#fff", padding: "20px" }}> <h1>{theme === "light" ? "Light Mode" : "Dark Mode"}</h1> <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}> Toggle Theme </button> </div> ); }
 
-  const current = theme
+export const NameForm = () => {
+
+  const [name, SetName] = useState('')
+
   return (
     <div>
-      <button onClick={() =>setTheme( theme === 'Light' ? 'Dark' : 'Light')}>{current}</button></div>
+      <input type="text" onChange={(e) => {
+        SetName(e.target.value)
+      }} />
+      <br />
+      <br />
+      <h1>Input : {name}</h1>
+    </div>
   )
 }
 
