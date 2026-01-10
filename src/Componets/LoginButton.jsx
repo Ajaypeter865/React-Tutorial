@@ -15,7 +15,6 @@ const LoginButton = () => {
 }
 
 const Profile = () => {
-
     const isLoggedIn = useContext(UserContext)
     return (
         <div>

@@ -27,6 +27,14 @@ const Header = () => {
                         <Link to='/button'>button</Link>
 
                     </li>
+                    <li >
+                        <Link to='/language'>Change Language</Link>
+
+                    </li>
+                      <li >
+                        <Link to='/reducer'>Reducer</Link>
+
+                    </li>
                 </ul>
             </div>
 

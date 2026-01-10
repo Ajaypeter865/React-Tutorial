@@ -8,6 +8,8 @@ import ThemeSwitcher from './Componets/Theme'
 import UpdateTitle from './Componets/UpdateTitle'
 import Error from './Componets/Error'
 import LoginButton from './Componets/LoginButton'
+import LanguageSwitch from './Componets/LanguageSwitch'
+import CounterReducer from './Componets/CounterReducer'
 
 
 const AppLayout = () => {
@@ -26,10 +28,10 @@ const appRouter = createBrowserRouter([
   {
     path: '/',
     element: <AppLayout />,
-    errorElement : <Error/>,
+    errorElement: <Error />,
 
     children: [
-  
+
       {
         path: '/counter',
         element: <Counter />
@@ -46,16 +48,24 @@ const appRouter = createBrowserRouter([
         path: '/updatetitle',
         element: <UpdateTitle />
       },
-        {
+      {
         path: '/button',
         element: <LoginButton />
+      },
+      {
+        path: '/language',
+        element: <LanguageSwitch />
+      },
+        {
+        path: '/reducer',
+        element: <CounterReducer />
       },
     ]
   }
 ])
 
 const App = () => {
- return <RouterProvider router={appRouter}/>
+  return <RouterProvider router={appRouter} />
 }
 
 export default App
