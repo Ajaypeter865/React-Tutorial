@@ -8,7 +8,7 @@ import ThemeSwitcher from './Componets/Theme'
 import UpdateTitle from './Componets/UpdateTitle'
 import Error from './Componets/Error'
 import LoginButton from './Componets/LoginButton'
-import LanguageSwitch from './Componets/LanguageSwitch'
+import UseContext from './Componets/LanguageSwitch'
 import CounterReducer from './Componets/CounterReducer'
 import SquareMemo from './Componets/Memo'
 
@@ -54,8 +54,8 @@ const appRouter = createBrowserRouter([
         element: <LoginButton />
       },
       {
-        path: '/language',
-        element: <LanguageSwitch />
+        path: '/usecontext',
+        element: <UseContext />
       },
         {
         path: '/reducer',

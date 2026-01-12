@@ -2,7 +2,7 @@ import { useContext, useState, createContext } from "react"
 
 const LanguageContext = createContext()
 
-const LanguageSwitch = () => {
+const UseContext = () => {
 
     const [changeLag, setChangeLag] = useState(false)
 
@@ -25,4 +25,4 @@ const Title = () => {
         </div>
     )
 }
-export default LanguageSwitch
+export default UseContext

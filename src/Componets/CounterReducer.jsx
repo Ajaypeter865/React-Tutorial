@@ -1,7 +1,6 @@
 import { useReducer } from "react"
 
 const reducer = (state, action) => {
-
     if (action === 'increment') {
 
         return state + 1

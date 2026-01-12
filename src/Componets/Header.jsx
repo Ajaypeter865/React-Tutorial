@@ -28,7 +28,7 @@ const Header = () => {
 
                     </li>
                     <li >
-                        <Link to='/language'>Change Language</Link>
+                        <Link to='/usecontext'>useContext</Link>
 
                     </li>
                       <li >
