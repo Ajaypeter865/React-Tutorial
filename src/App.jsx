@@ -10,6 +10,7 @@ import Error from './Componets/Error'
 import LoginButton from './Componets/LoginButton'
 import LanguageSwitch from './Componets/LanguageSwitch'
 import CounterReducer from './Componets/CounterReducer'
+import SquareMemo from './Componets/Memo'
 
 
 const AppLayout = () => {
@@ -59,6 +60,10 @@ const appRouter = createBrowserRouter([
         {
         path: '/reducer',
         element: <CounterReducer />
+      },
+      {
+        path: '/memo',
+        element: <SquareMemo />
       },
     ]
   }

@@ -35,6 +35,10 @@ const Header = () => {
                         <Link to='/reducer'>Reducer</Link>
 
                     </li>
+                     <li >
+                        <Link to='/memo'>Memo</Link>
+
+                    </li>
                 </ul>
             </div>
 
