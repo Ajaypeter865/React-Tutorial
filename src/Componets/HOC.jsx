@@ -1,5 +1,4 @@
 
-
 const EnhancedComponet = (ReplaceableComponet) => {
 
     const NewComponent = (props) => {

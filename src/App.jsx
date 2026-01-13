@@ -12,6 +12,7 @@ import UseContext from './Componets/LanguageSwitch'
 import CounterReducer from './Componets/CounterReducer'
 import SquareMemo from './Componets/Memo'
 import FocusInput from './Componets/UseRef'
+import FinalComponet from './Componets/HOC2'
 
 
 const AppLayout = () => {
@@ -69,6 +70,10 @@ const appRouter = createBrowserRouter([
        {
         path: '/useref',
         element: <FocusInput />
+      },
+       {
+        path: '/hoc',
+        element: <FinalComponet />
       },
     ]
   }

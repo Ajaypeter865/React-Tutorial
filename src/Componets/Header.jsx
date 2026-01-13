@@ -31,16 +31,20 @@ const Header = () => {
                         <Link to='/usecontext'>useContext</Link>
 
                     </li>
-                      <li >
+                    <li >
                         <Link to='/reducer'>Reducer</Link>
 
                     </li>
-                     <li >
+                    <li >
                         <Link to='/memo'>Memo</Link>
 
                     </li>
-                        <li >
+                    <li >
                         <Link to='/useref'>Use Ref</Link>
+
+                    </li>
+                     <li >
+                        <Link to='/hoc'>Hoc</Link>
 
                     </li>
                 </ul>
