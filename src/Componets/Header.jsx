@@ -39,6 +39,10 @@ const Header = () => {
                         <Link to='/memo'>Memo</Link>
 
                     </li>
+                        <li >
+                        <Link to='/useref'>Use Ref</Link>
+
+                    </li>
                 </ul>
             </div>
 

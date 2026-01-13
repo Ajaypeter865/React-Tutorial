@@ -11,6 +11,7 @@ import LoginButton from './Componets/LoginButton'
 import UseContext from './Componets/LanguageSwitch'
 import CounterReducer from './Componets/CounterReducer'
 import SquareMemo from './Componets/Memo'
+import FocusInput from './Componets/UseRef'
 
 
 const AppLayout = () => {
@@ -64,6 +65,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/memo',
         element: <SquareMemo />
+      },
+       {
+        path: '/useref',
+        element: <FocusInput />
       },
     ]
   }
