@@ -13,7 +13,7 @@ import CounterReducer from './Componets/CounterReducer'
 import SquareMemo from './Componets/Memo'
 import FocusInput from './Componets/UseRef'
 import FinalComponet from './Componets/HOC2'
-
+import WindowTracker from './Componets/CustomHook'
 
 const AppLayout = () => {
 
@@ -74,6 +74,10 @@ const appRouter = createBrowserRouter([
        {
         path: '/hoc',
         element: <FinalComponet />
+      },
+      {
+        path: '/customhooks',
+        element: <WindowTracker />
       },
     ]
   }

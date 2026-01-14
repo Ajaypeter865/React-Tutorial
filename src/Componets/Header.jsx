@@ -43,8 +43,12 @@ const Header = () => {
                         <Link to='/useref'>Use Ref</Link>
 
                     </li>
-                     <li >
+                    <li >
                         <Link to='/hoc'>Hoc</Link>
+
+                    </li>
+                    <li >
+                        <Link to='/customhooks'>Custom Hooks</Link>
 
                     </li>
                 </ul>
