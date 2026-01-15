@@ -1,11 +1,11 @@
 
 import { useState } from "react";
 
- const NameForm = () => {
-
+const NameForm = () => {
+  
   const [name, SetName] = useState('')
-
-
+  
+  
   return (
     <div>
       <input type="text" onChange={(e) => {
@@ -16,6 +16,6 @@ import { useState } from "react";
       <h1>Input : {name}</h1>
     </div>
   )
-}
+} 
 
 export default NameForm
