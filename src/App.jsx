@@ -59,7 +59,7 @@ const appRouter = createBrowserRouter([
         path: '/usecontext',
         element: <UseContext />
       },
-        {
+      {
         path: '/reducer',
         element: <CounterReducer />
       },
@@ -67,11 +67,11 @@ const appRouter = createBrowserRouter([
         path: '/memo',
         element: <SquareMemo />
       },
-       {
+      {
         path: '/useref',
         element: <FocusInput />
       },
-       {
+      {
         path: '/hoc',
         element: <FinalComponet />
       },
