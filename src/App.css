@@ -72,3 +72,21 @@
   background-color: #334155;
   color: #ffffff;
 }
+
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ffffff; /* change color if needed */
+  padding: 10px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #222;
+  font-weight: bold;
+}

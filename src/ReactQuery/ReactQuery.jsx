@@ -1,8 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
+import Users from '../Componets/ReactQuery'
 
 const userList = () => {
 
-    const { data , isLoading } = useQuery({
+    const { data, isLoading } = useQuery({
 
         queryKey: ['user'],
         queryFn: async () => {
@@ -14,12 +15,18 @@ const userList = () => {
             return JsonData
         },
 
-        enabled : true,
+        enabled: true,
 
         if(isLoading) {
             return <h1>Loading User List</h1>
         }
     })
+
+    return (
+        <div>
+            <Users />
+        </div>
+    )
 
 }
 

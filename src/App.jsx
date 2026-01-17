@@ -14,8 +14,8 @@ import SquareMemo from './Componets/Memo'
 import FocusInput from './Componets/UseRef'
 import FinalComponet from './Componets/HOC2'
 import WindowTracker from './Componets/CustomHook'
-// import ReactQuery from './ReactQuery/ReactQuery'
-import ReactQuery from './Componets/ReactQuery'
+import ReactQuery from './ReactQuery/ReactQuery'
+// import ReactQuery from './Componets/ReactQuery'
 
 const AppLayout = () => {
 
