@@ -51,6 +51,10 @@ const Header = () => {
                         <Link to='/customhooks'>Custom Hooks</Link>
 
                     </li>
+                      <li >
+                        <Link to='/reactquery'>React Query</Link>
+
+                    </li>
                 </ul>
             </div>
 
