@@ -1,6 +1,8 @@
 import { useState } from "react"
 
 const Counter = () => {
+    console.log('Render Counter');
+
   const [count, setCount] = useState(0)
 
   const Increase = count + 1

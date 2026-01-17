@@ -18,6 +18,8 @@ const useWindoWidth = () => {
 
 const WindowTracker = () => {
 
+    console.log('Render CustomHook');
+
     const width = useWindoWidth()
     return(
         <div>

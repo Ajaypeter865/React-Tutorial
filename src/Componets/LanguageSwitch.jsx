@@ -3,6 +3,8 @@ import { useContext, useState, createContext } from "react"
 const LanguageContext = createContext()
 
 const UseContext = () => {
+    console.log('Render LanguageSwitch');
+    
 
     const [changeLag, setChangeLag] = useState(false)
 

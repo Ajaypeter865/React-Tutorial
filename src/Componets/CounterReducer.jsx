@@ -11,6 +11,8 @@ const reducer = (state, action) => {
 }
 
 const CounterReducer = () => {
+    console.log('Render CounterReducer');
+    
 
     const [value, dispatch] = useReducer(reducer, 0)
 

@@ -3,6 +3,8 @@ import { useState, useContext, createContext } from "react";
 const UserContext = createContext()
 
 const LoginButton = () => {
+    console.log('Render LoginButton');
+
     const [isLoggedIn, SetIsLoggedIn] = useState(false)
     return (
         <UserContext.Provider value={isLoggedIn}>

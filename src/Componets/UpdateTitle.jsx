@@ -4,6 +4,8 @@ import { useEffect, useState } from "react"
 
 const UpdateTitle = () => {
 
+    console.log('Render UpdateTitle');
+
     const [user, setUser] = useState([])
 
     useEffect(() => {
@@ -20,7 +22,7 @@ const UpdateTitle = () => {
     return (
         <div>
             <h3><ul> <h1>NAMES</h1>
-                {user.map(user => <li>{user.name}</li>)}
+                {user.map(user => <li key={user.id}>{user.name}</li>)}
             </ul></h3>
         </div>
     )

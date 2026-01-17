@@ -1,6 +1,8 @@
 import { useState, useMemo } from "react"
 
 const SquareMemo = () => {
+    console.log('Render Memo');
+
     const [num, setNum] = useState([])
 
     const value = useMemo(() => {

@@ -2,6 +2,8 @@
 import { useQueryClient } from '@tanstack/react-query'
 
 const Users = () => {
+    console.log('Render ReactQuery');
+    
 
     const query = useQueryClient()
 

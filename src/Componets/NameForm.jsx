@@ -2,6 +2,8 @@
 import { useState } from "react";
 
 const NameForm = () => {
+    console.log('Render NameForm');
+
   
   const [name, SetName] = useState('')
   

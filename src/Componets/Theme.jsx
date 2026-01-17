@@ -1,6 +1,8 @@
 import { useState } from "react"
 
 const ThemeSwitcher = () => {
+    console.log('Render Theme');
+
   const [theme, setTheme] = useState('Light')
 
   return (
