@@ -24,11 +24,11 @@ const Header = () => {
 
                     </li>
                     <li >
-                        <Link to='/button'>button</Link>
+                        <Link to='/button'>Button</Link>
 
                     </li>
                     <li >
-                        <Link to='/usecontext'>useContext</Link>
+                        <Link to='/usecontext'>UseContext</Link>
 
                     </li>
                     <li >
@@ -51,8 +51,12 @@ const Header = () => {
                         <Link to='/customhooks'>Custom Hooks</Link>
 
                     </li>
-                      <li >
+                    <li >
                         <Link to='/reactquery'>React Query</Link>
+
+                    </li>
+                    <li >
+                        <Link to='/pagenation'>Pageantion</Link>
 
                     </li>
                 </ul>

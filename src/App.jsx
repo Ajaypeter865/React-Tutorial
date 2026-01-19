@@ -15,6 +15,7 @@ import FocusInput from './Componets/UseRef'
 import FinalComponet from './Componets/HOC2'
 import WindowTracker from './Componets/CustomHook'
 import ReactQuery from './ReactQuery/ReactQuery'
+import PaginationDemo from './Componets/Pagenation'
 // import ReactQuery from './Componets/ReactQuery'
 
 const AppLayout = () => {
@@ -84,6 +85,10 @@ const appRouter = createBrowserRouter([
         {
         path: '/reactquery',
         element: <ReactQuery />
+      },
+        {
+        path: '/pagenation',
+        element: <PaginationDemo />
       },
     ]
   }

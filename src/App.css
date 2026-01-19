@@ -53,6 +53,7 @@
   gap: 24px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .nav-items li {
