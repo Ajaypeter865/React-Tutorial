@@ -5,7 +5,7 @@ const items = Array.from({ length: 50 }, (_, i) => { return i + 1 })
 
 const PaginationDemo = () => {
 
-    const [page, setPage] = useState(2)
+    const [page, setPage] = useState(1)
 
     const pageSize = 10
 
